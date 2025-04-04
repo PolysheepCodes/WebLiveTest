@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TDO Development Page</title>
+        <link rel=stylesheet href="/Assets/Static/style.css">
+    </head>
+    
+    <body>
+        <h1>TheDailyOWO Development Page</h1>
+        <h2>Bug Tracker</h2>
+        <h3>Bugs to be dubugged:</h3>
+        <p>Yippe there are currently zero known bugs</p>
+        <ul>
+            
+        </ul>
+        <h3>Fixed Bug History</h3>
+        <ul>
+            <li>TSF Returning undefined value when succesfully triggered | Cause: value was set to RCMArray.length instead of TSFArray.length</li>
+        </ul>
+        <h2>Debug/Feature Testing Zone</h2>
+        <h3>TSF Bug Test</h3>
+        <footer>
+            <p id=RFMOutput></p>
+            <p>Chances altered for debug purposes</p>
+        </footer>
+        <p></p>
+        <footer>
+            <p id=RCMOutputDebug> </p>
+            <p>RCM is outputted to Footer elem for testing pourposes aswell as retaining original Console Function</p>
+        </footer>
+        <p></p>
+        <footer>
+            <p id=TSFDOutput> </p>
+            <p id=TriggeredManually> </p>
+            <p id=TSFStatus> </p>
+            <p>TSF is outputted to Footer elem for testing pourposes aswell as retaining original Console Function</p>
+        </footer>
+        <h3>Navigation Testing</h3>
+        <p>Navbar Testing</p>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../SubPages/Blog/index.html">Blog</a>
+        </nav>
+        <p></p>
+        <footer>
+            <p>Vertical Navigation Testing</p>
+            <nav class=vertnav>
+            <p>Our Sites</p>
+            <a href="https://adonis.thedailyowo.win">The Adonis Taskforce</a><br>
+            <a href="https://home.thedailyowo.win">Legacy Site</a><br>
+            <a href="https://modeto.thedailyowo.win">Legacy Modeto Site</a><br>
+            <a href="https://openberry.thedailyowo.win">The Openberry Project</a>
+        </nav>
+        </footer>
+        <h3>Animation Testing</h3>
+        <p>Alert Popup Animations</p>
+        <div class=navbar>
+        <button onclick="alertpopuptrigger()" >Trigger Popup Animation</button>
+        </div>
+        <p></p>
+        <div id=overlay>
+            <div id=alert-popup class=alert-popup>
+                <h2>Alert: Popup Manually Triggered</h2>
+                <button onclick="alertpopupreset()">Reset Popup</button>
+            </div>
+            <div id=alert-popup2 class=alert-popup>
+                <h2>Critical Warning: Site Intrusion attempt from teras://atf.secrose.inc/api/v5/watchful-eye detected, please check server backend logs for details</h2>
+                <button onclick="alertpopupreset2()">Reset Popup</button>
+            </div>
+        </div>
+        <script src="module-debug.js"></script>
+    </body>
+</html>
